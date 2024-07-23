@@ -1,0 +1,51 @@
+:root {
+  --brand-color: #0ea5e9;
+  --dark-color: #0f172a;
+  --mid-color: #cbd5e1;
+  --light-color: #ffffff;
+}
+
+/* images */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*  image card */
+.card {
+  position: relative;
+  background-color: #065e8671;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  display: block;
+  cursor: pointer;
+}
+
+/* front of card  */
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+  transition: all ease-in 0.2s;
+  object-fit: contain;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+/* back of card-cover */
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
