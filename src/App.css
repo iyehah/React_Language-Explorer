@@ -4,7 +4,11 @@
   --mid-color: #cbd5e1;
   --light-color: #ffffff;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   margin: 0;
@@ -21,7 +25,7 @@ body {
 
 /* App */
 .App {
-  max-width: 860px;
+  max-width: 500px;
   margin: 40px auto;
 }
 
@@ -29,6 +33,7 @@ body {
 button {
   background: #0ea5e9;
   border: none;
+  margin: 10px;
   padding: 6px 12px;
   border-radius: 4px;
   color: #fff;
@@ -43,15 +48,17 @@ button:hover {
 
 /* Card grid */
 .card-grid {
-  margin-top: 40px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+  height: 300px;
+  width: 100%;
 }
 
 /* turns */
 .turns {
   color: #0ea5e9;
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 1rem;
 }
